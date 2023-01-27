@@ -1,0 +1,54 @@
+.scream {
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    left: 0;
+    top: 0;
+}
+
+.scream h1 {
+    font-size: 8vmin;
+}
+
+.scream p {
+    font-size: 4vmin;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+  }
+  
+  body, html {
+    overflow-x: hidden;
+  }
+  
+  .webgl {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+  }

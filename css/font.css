@@ -1,0 +1,10 @@
+:root {
+    font-family: migra;
+  }
+  
+  @font-face {
+    font-family: migra;
+    src: url('../migra.ttf') format('truetype'),
+         url('../migra.woff') format('woff');
+  }
+  

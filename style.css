@@ -1,0 +1,93 @@
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.5, 0.5); }
+  100% { opacity: 1; transform: scale(1, 1)}
+}
+
+@keyframes scaleTo {
+  0% { transform: scale(0, 0); }
+  100% { transform: scale(1, 1); }
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  color: white;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  background-size: contain;
+  width: 70vmin;
+  height: 70vmin;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+img {
+  z-index: -1;
+}
+
+.text {
+  position: absolute;
+  text-align: center;
+  animation: scaleTo 3s;
+  -webkit-animation: scaleTo 3s;
+  -moz-animation: scaleTo 3s;
+  -o-animation: scaleTo 3s;
+  -ms-animation: scaleTo 3s;
+}
+
+ .text h1 {
+  font-size: 16vmin;
+ }
+
+ .text p {
+  font-size: 4vmin;
+ }
+
+ .links {
+  justify-content: flex;
+  row-gap: 2rem;
+  font-size: 3vmin;
+ }
+
+a {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+a::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgb(30, 101, 244);
+  z-index: -1;
+  transition: transform .3s ease;
+}

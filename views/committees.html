@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/globe.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Committees - MILMUNC I</title>
+    <link href="../css/root.css" rel="stylesheet">
+    <link href="../css/committees.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar">
+        <div class="brand-title"><a href="/"><h1>MILMUNC I</h1></a></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="/views/committees.html">committees</a></li>
+            <li><a href="/views/registration.html">registration</a></li>
+            <li><a href="/views/information.html">information</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <canvas id="c"></canvas>
+    <!-- <p>
+      <span id="box" class="diagram left"></span>
+      I love boxes. Presents come in boxes.
+      When I find a new box I'm always excited to find out what's inside.
+    </p>
+    <p>
+      <span id="pyramid" class="diagram right"></span>
+      When I was a kid I dreamed of going on an expedition inside a pyramid
+      and finding a undiscovered tomb full of mummies and treasure.
+    </p> -->
+
+      <div class="row">
+        <span id="box"></span>
+        <div class="columntext">
+            <h1>General Assembly 1</h1>
+            <p>Topic: Turkey-Kurdish Conflict + Yemen Civil War</p>
+            <p>Chairs: Shreyan Ghelani + Dani Hackett</p>
+            <a href="#linktobg">background guide</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columntext">
+            <h1>Security Council</h1>
+            <p>Topic: Azerbaijan-Armenia Conflict</p>
+            <p>Chairs: Yousuf Mirza + Tanish Karnala</p>
+            <a href="#linktobg">background guide</a>
+        </div>
+        <span id="pyramid"></span>
+      </div>
+
+      <div class="row">
+        <span id="ga3"></span>
+        <div class="columntext">
+            <h1>General Assembly 3</h1>
+            <p>Topic: Israeli-Palestinian Conflict + Mynamar Refugee Crisis</p>
+            <p>Chairs: Sujay Vijayakumar + Elana Thille</p>
+            <a href="#linktobg">background guide</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columntext">
+            <h1>Star Wars Crisis</h1>
+            <p>Topic: Regulation of Intergalactic Trade during the Clone Wars</p>
+            <p>Chairs: Ashwin Mudaliar + Adi Verma (Backroom) / Heet Shah + Shyla Chahlal</p>
+            <a href="#linktobg">background guide</a>
+        </div>
+        <span id="starwars"></span>
+      </div>
+
+
+      <script  type="importmap">{
+        "imports": {
+            "three": "https://threejs.org/build/three.module.js"
+        }
+    }</script><!-- Remove this when import maps will be widely supported -->
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+    <script type="module" src="../js/navbar.js"></script>
+    <script type="module" src="../js/committee.js"></script>
+  </body>
+</html>
