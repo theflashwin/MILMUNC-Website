@@ -98,3 +98,14 @@
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
+
+.icon-row {
+    display: flex;
+    gap: 2rem;
+    top: 50%
+}
+
+span {
+    height: 3rem;
+    width: auto;
+}
